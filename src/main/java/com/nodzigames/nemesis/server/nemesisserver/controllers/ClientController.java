@@ -29,8 +29,8 @@ public class ClientController {
         return "Client registered successfully";
     }
 
-    @GetMapping("/retrieve")
-    public Client getClient(@RequestBody GetClientRequest req) {
+    @PostMapping("/retrieve")
+    public Client retrieve(@RequestBody GetClientRequest req) {
         if (req.getUsername() == null) {
             return null;
         }
