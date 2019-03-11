@@ -32,4 +32,8 @@ public class ClientDatabase {
         }
         return null;
     }
+
+    public List<Client> getAllClients() {
+        return clients;
+    }
 }

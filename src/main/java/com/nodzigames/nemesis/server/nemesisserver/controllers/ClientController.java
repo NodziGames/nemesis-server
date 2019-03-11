@@ -7,6 +7,8 @@ import com.nodzigames.nemesis.server.nemesisserver.client.LoginRequest;
 import com.nodzigames.nemesis.server.nemesisserver.client.RegisterClientRequest;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/client")
 public class ClientController {
@@ -49,5 +51,10 @@ public class ClientController {
         }
 
         return ("Incorrect password!");
+    }
+
+    @GetMapping("/all")
+    public List<Client> all() {
+        return NemesisServerApplication.clientDatabase.getAllClients();
     }
 }
