@@ -20,6 +20,8 @@ public class Client {
     private int firewallLevel;
     private long data; //Currency
 
+    private long dataFarms; //Generates currency
+
     public Client(String username, String password) {
         this.username = username;
         this.password = password;
@@ -29,6 +31,8 @@ public class Client {
         data = 100;
 
         firewallLevel = 1;
+
+        dataFarms = 1;
     }
 
 
@@ -73,5 +77,13 @@ public class Client {
 
     public void setData(long data) {
         this.data = data;
+    }
+
+    public long getDataFarms() {
+        return dataFarms;
+    }
+
+    public void setDataFarms(long dataFarms) {
+        this.dataFarms = dataFarms;
     }
 }
