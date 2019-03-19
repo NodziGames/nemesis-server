@@ -1,5 +1,6 @@
 package com.nodzigames.nemesis.server.nemesisserver;
 
+import com.nodzigames.nemesis.server.nemesisserver.algorithms.PoolNameGenerator;
 import com.nodzigames.nemesis.server.nemesisserver.client.Client;
 import com.nodzigames.nemesis.server.nemesisserver.client.ClientDatabase;
 import com.nodzigames.nemesis.server.nemesisserver.logic.TickerMinute;
