@@ -28,7 +28,7 @@ public class Client {
 
         token = TokenGenerator.GenerateToken();
 
-        data = 100;
+        data = 1000;
 
         firewallLevel = 1;
 
